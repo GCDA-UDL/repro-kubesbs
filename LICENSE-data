@@ -1,0 +1,12 @@
+The captured results (kubesbs/results-repro/), the generated datasets and the files
+in expected/ are licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt them for any purpose, provided that you give appropriate
+credit (cite this reproduction package, see CITATION.cff), provide a link to the
+license and indicate if changes were made.
+
+The workloads derive from the Alibaba cluster trace (https://github.com/alibaba/clusterdata),
+which remains subject to its own terms.
+
+The code in this repository is licensed separately under the Apache License 2.0 (LICENSE).

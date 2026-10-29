@@ -1,0 +1,5 @@
+# The frozen KubeSBS copy and the expected outputs are kept byte for byte
+# (dataset checksums, harness logs, captured CSVs): no end-of-line conversion.
+kubesbs/** -text
+expected/** -text
+*.sh text eol=lf

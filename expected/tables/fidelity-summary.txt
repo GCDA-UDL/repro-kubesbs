@@ -1,0 +1,37 @@
+runs: 36 (4210R server, W-3245 server, KWOK); pairs: 144
+
+== 10 nodes, 82 pods
+  4210R server   unscheduled [4, 4, 4]  latency ms p50 3.1 (3.0-3.1)  p95 4.4  p99 6.5 (5.1-8.4)
+  W-3245 server  unscheduled [4, 4, 4]  latency ms p50 2.7 (2.5-2.8)  p95 4.7  p99 8.4 (5.9-9.7)
+  KWOK           unscheduled [4, 4, 4]  latency ms p50 4.0 (3.9-4.0)  p95 4.6  p99 5.7 (5.1-6.2)
+  KWOK-same-tool       n=3  agreement 12.2% [11.0%, 13.4%]  agreement_equiv 51.2% [47.6%, 53.7%]  w1_cpu 0.31pp [0.25pp, 0.38pp]  w1_mem 2.27pp [1.35pp, 3.11pp]
+  KWOK-vs-real         n=18  agreement 15.4% [6.1%, 26.8%]  agreement_equiv 52.4% [40.2%, 63.4%]  w1_cpu 0.24pp [0.06pp, 0.38pp]  w1_mem 2.42pp [1.39pp, 4.29pp]
+  real-across-hosts    n=9  agreement 12.7% [6.1%, 19.5%]  agreement_equiv 51.6% [43.9%, 67.1%]  w1_cpu 0.23pp [0.06pp, 0.38pp]  w1_mem 2.75pp [1.57pp, 3.96pp]
+  real-same-host       n=6  agreement 12.2% [7.3%, 17.1%]  agreement_equiv 53.5% [42.7%, 63.4%]  w1_cpu 0.25pp [0.19pp, 0.31pp]  w1_mem 3.10pp [1.68pp, 4.61pp]
+
+== 30 nodes, 287 pods
+  4210R server   unscheduled [2, 2, 2]  latency ms p50 7.7 (7.3-8.1)  p95 18.1  p99 24.8 (23.2-25.9)
+  W-3245 server  unscheduled [2, 2, 2]  latency ms p50 3.3 (3.2-3.3)  p95 6.4  p99 11.5 (9.8-13.0)
+  KWOK           unscheduled [4, 2, 2]  latency ms p50 4.1 (4.0-4.1)  p95 4.7  p99 5.4 (5.2-5.7)
+  KWOK-same-tool       n=3  agreement 5.0% [4.2%, 6.3%]  agreement_equiv 22.0% [19.5%, 24.7%]  w1_cpu 1.20pp [0.45pp, 1.63pp]  w1_mem 2.50pp [2.40pp, 2.56pp]
+  KWOK-vs-real         n=18  agreement 6.0% [3.5%, 9.1%]  agreement_equiv 20.5% [17.4%, 23.3%]  w1_cpu 0.78pp [0.27pp, 1.69pp]  w1_mem 2.22pp [1.56pp, 3.20pp]
+  real-across-hosts    n=9  agreement 7.9% [6.3%, 10.8%]  agreement_equiv 26.3% [22.3%, 30.3%]  w1_cpu 0.38pp [0.23pp, 0.59pp]  w1_mem 2.20pp [1.63pp, 3.06pp]
+  real-same-host       n=6  agreement 8.9% [4.2%, 12.2%]  agreement_equiv 25.4% [22.6%, 28.9%]  w1_cpu 0.40pp [0.32pp, 0.65pp]  w1_mem 2.24pp [1.64pp, 2.70pp]
+
+== 60 nodes, 670 pods
+  4210R server   unscheduled [10, 10, 10]  latency ms p50 27.3 (26.4-28.1)  p95 75.8  p99 114.7 (108.4-122.5)
+  W-3245 server  unscheduled [10, 10, 10]  latency ms p50 4.8 (4.6-4.9)  p95 11.8  p99 21.1 (18.6-22.8)
+  KWOK           unscheduled [10, 10, 10]  latency ms p50 4.1 (4.1-4.2)  p95 4.9  p99 5.7 (5.6-5.7)
+  KWOK-same-tool       n=3  agreement 7.2% [6.0%, 8.8%]  agreement_equiv 19.3% [18.8%, 20.0%]  w1_cpu 0.23pp [0.20pp, 0.26pp]  w1_mem 1.60pp [1.51pp, 1.72pp]
+  KWOK-vs-real         n=18  agreement 5.2% [4.3%, 6.3%]  agreement_equiv 17.6% [16.3%, 18.2%]  w1_cpu 0.23pp [0.12pp, 0.34pp]  w1_mem 1.68pp [0.96pp, 2.34pp]
+  real-across-hosts    n=9  agreement 6.1% [4.5%, 7.9%]  agreement_equiv 20.0% [19.1%, 21.5%]  w1_cpu 0.23pp [0.17pp, 0.32pp]  w1_mem 1.32pp [0.95pp, 1.86pp]
+  real-same-host       n=6  agreement 5.6% [4.8%, 6.4%]  agreement_equiv 19.8% [18.8%, 21.6%]  w1_cpu 0.26pp [0.18pp, 0.32pp]  w1_mem 1.35pp [0.98pp, 1.88pp]
+
+== 100 nodes, 1065 pods
+  4210R server   unscheduled [22, 24, 23]  latency ms p50 68.2 (63.1-73.5)  p95 250.9  p99 401.3 (354.8-437.7)
+  W-3245 server  unscheduled [24, 22, 23]  latency ms p50 7.9 (7.7-8.1)  p95 26.7  p99 51.7 (46.5-57.5)
+  KWOK           unscheduled [22, 24, 21]  latency ms p50 4.3 (4.3-4.3)  p95 5.0  p99 6.0 (5.8-6.3)
+  KWOK-same-tool       n=3  agreement 5.3% [4.9%, 5.5%]  agreement_equiv 18.5% [18.4%, 18.6%]  w1_cpu 0.31pp [0.24pp, 0.40pp]  w1_mem 1.20pp [0.96pp, 1.40pp]
+  KWOK-vs-real         n=18  agreement 4.7% [3.8%, 5.6%]  agreement_equiv 18.3% [16.8%, 19.4%]  w1_cpu 0.29pp [0.12pp, 0.55pp]  w1_mem 1.11pp [0.58pp, 1.39pp]
+  real-across-hosts    n=9  agreement 5.4% [4.6%, 6.2%]  agreement_equiv 18.7% [17.6%, 19.5%]  w1_cpu 0.22pp [0.16pp, 0.33pp]  w1_mem 1.16pp [0.90pp, 1.57pp]
+  real-same-host       n=6  agreement 4.4% [3.9%, 5.2%]  agreement_equiv 19.2% [18.1%, 20.5%]  w1_cpu 0.26pp [0.18pp, 0.38pp]  w1_mem 1.06pp [0.94pp, 1.26pp]

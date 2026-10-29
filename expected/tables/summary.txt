@@ -1,0 +1,52 @@
+kcs: within-CV median run_time=0.0%, total_cpu_seconds=0.4%, memory_peak_gb=3.4% | between run_time=+0%..+5%, total_cpu_seconds=-1%..+7%, memory_peak_gb=-5%..+5%
+opensim: within-CV median run_time=0.5%, total_cpu_seconds=0.4%, memory_peak_gb=1.5% | between run_time=-1%..+2%, total_cpu_seconds=-2%..+2%, memory_peak_gb=-11%..+19%
+kwok: within-CV median run_time=0.4%, total_cpu_seconds=0.4%, memory_peak_gb=1.0% | between run_time=-1%..+9%, total_cpu_seconds=-1%..+10%, memory_peak_gb=-2%..+1%
+kube-sched: within-CV median run_time=0.4%, total_cpu_seconds=0.5%, memory_peak_gb=1.8% | between run_time=+4%..+6%, total_cpu_seconds=-5%..+8%, memory_peak_gb=-6%..+2%
+simkube: within-CV median run_time=19.5%, total_cpu_seconds=13.1%, memory_peak_gb=2.1% | between run_time=-43%..+25%, total_cpu_seconds=-39%..+21%, memory_peak_gb=-9%..+3%
+kubemark: within-CV median run_time=4.0%, total_cpu_seconds=1.7%, memory_peak_gb=4.9% | between run_time=-4%..+11%, total_cpu_seconds=-3%..+6%, memory_peak_gb=-9%..+12%
+kcs: scaling b run_time=1.22(R2=0.98), total_cpu_seconds=1.54(R2=0.98), memory_peak_gb=0.46(R2=0.95)
+opensim: scaling b run_time=1.71(R2=1.00), total_cpu_seconds=1.89(R2=1.00), memory_peak_gb=1.68(R2=1.00)
+kwok: scaling b run_time=0.77(R2=0.97), total_cpu_seconds=0.86(R2=0.99), memory_peak_gb=0.44(R2=0.99)
+kube-sched: scaling b run_time=0.77(R2=0.97), total_cpu_seconds=1.27(R2=0.93), memory_peak_gb=0.91(R2=0.98)
+simkube: scaling b run_time=0.44(R2=0.90), total_cpu_seconds=0.81(R2=0.96), memory_peak_gb=0.22(R2=0.95)
+kubemark: scaling b run_time=1.40(R2=0.97), total_cpu_seconds=1.66(R2=0.97), memory_peak_gb=0.27(R2=0.96)
+phases kwok 100: setup 1 workload 51 end 1 total 54 share 2% (n=3)
+phases kwok 400: setup 1 workload 173 end 5 total 179 share 3% (n=3)
+phases kwok 800: setup 2 workload 329 end 4 total 335 share 1% (n=3)
+phases kwok 1200: setup 2 workload 346 end 2 total 349 share 1% (n=3)
+phases kube-sched 100: setup 2 workload 52 end 2 total 56 share 3% (n=3)
+phases kube-sched 400: setup 2 workload 190 end 6 total 197 share 3% (n=3)
+phases kube-sched 800: setup 2 workload 332 end 6 total 340 share 2% (n=3)
+phases kube-sched 1200: setup 2 workload 351 end 3 total 356 share 1% (n=3)
+phases simkube 100: setup 86 workload 38 end 63 total 187 share 34% (n=3)
+phases simkube 400: setup 88 workload 68 end 262 total 418 share 63% (n=3)
+phases simkube 800: setup 89 workload 111 end 429 total 629 share 68% (n=3)
+phases simkube 1200: setup 87 workload 72 end 334 total 493 share 68% (n=3)
+phases kubemark 100: setup 36 workload 53 end 1 total 90 share 1% (n=3)
+phases kubemark 400: setup 36 workload 183 end 239 total 458 share 52% (n=3)
+phases kubemark 800: setup 37 workload 331 end 1539 total 1907 share 81% (n=3)
+phases kubemark 1200: setup 37 workload 350 end 1531 total 1918 share 80% (n=3)
+kcs run_time: mean at 1200 nodes = 19.00; range of means 1.00..19.00
+kcs total_cpu_seconds: mean at 1200 nodes = 116.83; range of means 0.00..116.83
+kcs memory_peak_gb: mean at 1200 nodes = 0.15; range of means 0.00..0.15
+kcs unscheduled share by size: 100:0%, 200:0%, 300:0%, 400:0%, 500:0%, 600:0%, 700:0%, 800:0%, 900:0%, 1000:0%, 1100:0%, 1200:0%
+opensim run_time: mean at 1200 nodes = 179.67; range of means 3.00..179.67
+opensim total_cpu_seconds: mean at 1200 nodes = 754.33; range of means 7.00..754.33
+opensim memory_peak_gb: mean at 1200 nodes = 6.04; range of means 0.11..6.27
+opensim unscheduled share by size: 100:0%, 200:0%, 300:0%, 400:0%, 500:0%, 600:0%, 700:0%, 800:0%, 900:0%, 1000:0%, 1100:0%, 1200:0%
+kwok run_time: mean at 1200 nodes = 339.33; range of means 54.33..339.33
+kwok total_cpu_seconds: mean at 1200 nodes = 316.17; range of means 41.17..316.17
+kwok memory_peak_gb: mean at 1200 nodes = 1.48; range of means 0.52..1.48
+kwok unscheduled share by size: 100:2%, 200:1%, 300:1%, 400:1%, 500:1%, 600:1%, 700:1%, 800:0%, 900:0%, 1000:0%, 1100:0%, 1200:0%
+kube-sched run_time: mean at 1200 nodes = 347.83; range of means 54.83..347.83
+kube-sched total_cpu_seconds: mean at 1200 nodes = 1322.00; range of means 54.83..1322.00
+kube-sched memory_peak_gb: mean at 1200 nodes = 8.28; range of means 0.86..8.28
+kube-sched unscheduled share by size: 100:2%, 200:1%, 300:1%, 400:1%, 500:1%, 600:1%, 700:1%, 800:0%, 900:0%, 1000:0%, 1100:0%, 1200:0%
+simkube run_time: mean at 1200 nodes = 521.83; range of means 230.33..646.67
+simkube total_cpu_seconds: mean at 1200 nodes = 2272.00; range of means 419.67..2635.33
+simkube memory_peak_gb: mean at 1200 nodes = 12.83; range of means 7.86..12.83
+simkube unscheduled share by size: 100:0%, 200:0%, 300:0%, 400:0%, 500:0%, 600:0%, 700:0%, 800:0%, 900:0%, 1000:0%, 1100:0%, 1200:0%
+kubemark run_time: mean at 1200 nodes = 1825.00; range of means 90.17..1982.17
+kubemark total_cpu_seconds: mean at 1200 nodes = 11425.17; range of means 307.50..11645.83
+kubemark memory_peak_gb: mean at 1200 nodes = 19.53; range of means 8.99..19.53
+kubemark unscheduled share by size: 100:1%, 200:21%, 300:43%, 400:56%, 500:64%, 600:69%, 700:73%, 800:75%, 900:76%, 1000:76%, 1100:74%, 1200:72%

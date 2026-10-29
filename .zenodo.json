@@ -1,0 +1,19 @@
+{
+  "title": "KubeSBS: A Reproducible Measurement Framework for Kubernetes Cluster Simulators (reproduction package)",
+  "upload_type": "software",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "creators": [
+    {"name": "Medina Jara, Matias Nicolas", "orcid": "0009-0000-2858-4317", "affiliation": "SEMBAC, Universitat de Lleida"},
+    {"name": "Tomàs, Rosana", "orcid": "0000-0002-1995-3974", "affiliation": "SEMBAC, Universitat de Lleida"},
+    {"name": "Lérida, Josep Lluís", "orcid": "0000-0002-9352-9338", "affiliation": "SEMBAC, Universitat de Lleida"},
+    {"name": "Guirado, Fernando", "orcid": "0000-0003-1352-9555", "affiliation": "SEMBAC, Universitat de Lleida"},
+    {"name": "da Silva, Vitor L.", "orcid": "0000-0002-3296-2752", "affiliation": "SEMBAC, Universitat de Lleida"}
+  ],
+  "description": "<p>Reproduction package of the paper <em>KubeSBS: A Reproducible Measurement Framework for Kubernetes Cluster Simulators</em>. It contains a frozen copy of KubeSBS v0.4.0 (the framework, its datasets and the per-tool modules); the captured results of every experiment in the paper: the cost of six Kubernetes cluster simulators (KWOK, Kubemark, SimKube, the Kubernetes Scheduler Simulator, OpenSimulator and kcs) on an Alibaba-derived workload from 100 to 1,200 nodes in two sessions four months apart, a small-scale comparison with vanilla Kubernetes, and a fidelity study of KWOK against a real k3s cluster of 10 to 100 nodes on two hosts; and a Docker environment that regenerates every data figure and table of the paper and checks the tables against the published ones. REPRODUCE.md explains how to re-run the experiments.</p><p>This work has been granted by the Ministerio de Ciencia, Innovación y Universidades (MICIU) AEI/10.13039/501100011033 under contract PID2023-146193OB-I00.</p>",
+  "keywords": ["KubeSBS", "Kubernetes", "cluster simulator", "KWOK", "benchmarking", "fidelity", "reproducibility", "reproduction package"],
+  "related_identifiers": [
+    {"relation": "isSupplementTo", "identifier": "https://github.com/GCDA-UDL/repro-kubesbs", "resource_type": "software"},
+    {"relation": "references", "identifier": "https://github.com/GCDA-UDL/kubesbs", "resource_type": "software"}
+  ]
+}

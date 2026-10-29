@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    alibabacloud.com/gpu-count: "1"
+    alibabacloud.com/gpu-milli: "1000"
+  name: openb-pod-0000
+  namespace: paib-gpu
+spec:
+  containers:
+    - image: tensorflow:latest
+      imagePullPolicy: IfNotPresent
+      name: main
+      resources:
+        limits:
+          cpu: 1m
+          memory: 1Mi
+        requests:
+          cpu: 1m
+          memory: 1Mi
+  dnsPolicy: Default
+  restartPolicy: OnFailure
+  tolerations:
+    - effect: NoSchedule
+      key: openb-only
+      operator: Equal
+      value: "true"
