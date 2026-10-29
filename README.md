@@ -18,7 +18,7 @@ this repository freezes the version used by the paper.
 
 | Path | Contents |
 |---|---|
-| [`kubesbs/`](kubesbs) | Frozen copy of **KubeSBS v0.4.0** (tag `v0.4.0`, commit `4dcb74b`): KubeGen, KubeRun, KubeDirector, the tool modules, the datasets and the reproduction scripts. The `medium` and `small` datasets, unused by the paper, are left out. |
+| [`kubesbs/`](kubesbs) | Frozen copy of **KubeSBS v0.4.0** (tag `v0.4.0`, commit `4dcb74b`): KubeGen, KubeRun, KubeDirector, the tool modules, the datasets and the reproduction scripts. Only what the paper uses is kept: the `medium` and `small` datasets, the results of other studies (`results-repro/{k8ssim,kcs,small-final,test,traces}`) and the development notes (`TODO.md`, `AGENTS.md`, `specs/`, `summaries/`, `REPRODUCIBILITY_REPORT.md`, `.specify/`) are left out; links to them inside `kubesbs/` point to files of the [full repository](https://github.com/GCDA-UDL/kubesbs/tree/v0.4.0). |
 | [`kubesbs/results-repro/`](kubesbs/results-repro) | Captured results of every experiment in the paper (table below), with harness logs and provenance where they exist. |
 | [`expected/`](expected) | The data tables and figures exactly as printed in the paper. |
 | [`reproduce.sh`](reproduce.sh) | Regenerates every data figure and table from the captured results and compares the tables with `expected/`. |

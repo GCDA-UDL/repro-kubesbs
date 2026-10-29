@@ -1,7 +1,7 @@
 {
   "title": "KubeSBS: A Reproducible Measurement Framework for Kubernetes Cluster Simulators (reproduction package)",
   "upload_type": "software",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Apache-2.0",
   "creators": [
     {"name": "Medina Jara, Matias Nicolas", "orcid": "0009-0000-2858-4317", "affiliation": "SEMBAC, Universitat de Lleida"},
