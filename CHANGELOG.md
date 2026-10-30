@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.2] — 2026-10-30
+
+- Author metadata: Matias Medina's name in its canonical form (`Medina, Matias`) in
+  `CITATION.cff`, `.zenodo.json` and the README. No change to code, data or results.
+
 ## [0.1.1] — 2026-10-30
 
 - Only what the paper uses: removed from `kubesbs/` the results of other studies

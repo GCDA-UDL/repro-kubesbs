@@ -11,8 +11,8 @@ abstract: >-
   them against the published versions.
 type: software
 authors:
-  - given-names: Matias Nicolas
-    family-names: Medina Jara
+  - given-names: Matias
+    family-names: Medina
     orcid: "https://orcid.org/0009-0000-2858-4317"
     affiliation: "SEMBAC, Universitat de Lleida, Edifici CREA, C/Pere de Cabrera s/n. 25001 Lleida (Spain)"
   - given-names: Rosana
@@ -39,7 +39,7 @@ contact:
     orcid: "https://orcid.org/0000-0002-3296-2752"
 license: Apache-2.0
 repository-code: "https://github.com/GCDA-UDL/repro-kubesbs"
-version: 0.1.1
+version: 0.1.2
 date-released: "2026-10-30"
 keywords:
   - KubeSBS
@@ -55,8 +55,8 @@ references:
     version: 0.4.0
     repository-code: "https://github.com/GCDA-UDL/kubesbs"
     authors:
-      - family-names: Medina Jara
-        given-names: Matias Nicolas
+      - family-names: Medina
+        given-names: Matias
       - family-names: Tomàs
         given-names: Rosana
       - family-names: Lérida

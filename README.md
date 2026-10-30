@@ -9,7 +9,7 @@ Code, captured results and analysis environment for the paper
 > **KubeSBS: A Reproducible Measurement Framework for Kubernetes Cluster Simulators**
 > (under review).
 
-**Authors:** Matias N. Medina, Rosana Tomàs, Josep Lluís Lérida, Fernando Guirado and
+**Authors:** Matias Medina, Rosana Tomàs, Josep Lluís Lérida, Fernando Guirado and
 Vitor L. da Silva — SEMBAC, Universitat de Lleida, Spain.
 The framework itself is developed at [GCDA-UDL/kubesbs](https://github.com/GCDA-UDL/kubesbs);
 this repository freezes the version used by the paper.
